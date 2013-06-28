@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vtex.Kd.Test", "Vtex.Kd.Test\Vtex.Kd.Test.csproj", "{AA934587-462E-4282-A42A-817057CAE5F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vtex.Kd", "Vtex.Kd\Vtex.Kd.csproj", "{A37DFCA7-AE50-4249-93D3-A5360DB5877D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vtex.Kd.ConsoleApp", "Vtex.Kd.ConsoleApp\Vtex.Kd.ConsoleApp.csproj", "{28573709-6EA1-4562-8E4A-54582626D3A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA934587-462E-4282-A42A-817057CAE5F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA934587-462E-4282-A42A-817057CAE5F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA934587-462E-4282-A42A-817057CAE5F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA934587-462E-4282-A42A-817057CAE5F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A37DFCA7-AE50-4249-93D3-A5360DB5877D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A37DFCA7-AE50-4249-93D3-A5360DB5877D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A37DFCA7-AE50-4249-93D3-A5360DB5877D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A37DFCA7-AE50-4249-93D3-A5360DB5877D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28573709-6EA1-4562-8E4A-54582626D3A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28573709-6EA1-4562-8E4A-54582626D3A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28573709-6EA1-4562-8E4A-54582626D3A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28573709-6EA1-4562-8E4A-54582626D3A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
