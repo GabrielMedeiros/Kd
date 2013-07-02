@@ -16,7 +16,7 @@ namespace Vtex.Kd.Test
                 ap_mac = "1:1:1"
             };
 
-            var staFinder = new StaFinder();
+            var staFinder = new StaFinder(new NetWorkGeoMap());
 
             var placeInfo = staFinder.Find(sta);
 
@@ -35,14 +35,14 @@ namespace Vtex.Kd.Test
                 ap_mac = "1:1:1"
             };
 
-            var staFinder = new StaFinder();
+            var staFinder = new StaFinder(new NetWorkGeoMap());
 
             var placeInfo = staFinder.Find(sta);
 
             Assert.AreEqual(PlaceEnum.SecondFloor, placeInfo.Place);
 
         }
-        
+
         [Test]
         public void Sta_at_10_floor_return_10_floor()
         {
@@ -54,17 +54,39 @@ namespace Vtex.Kd.Test
                 ap_mac = "2:2:2"
             };
 
-            var staFinder = new StaFinder();
+            var staFinder = new StaFinder(new NetWorkGeoMap());
 
             var placeInfo = staFinder.Find(sta);
 
             Assert.AreEqual(PlaceEnum.TenthFloor, placeInfo.Place);
         }
 
+        [Test]
+        public void StaFinder_Has_NetworkGeoMap()
+        {
+            var netWorkGeoMap = new NetWorkGeoMap();
+
+            var staFinder = new StaFinder(netWorkGeoMap);
+
+            Assert.NotNull(staFinder.NetWorkGeoMap);
+        }
+
+    }
+
+    public class NetWorkGeoMap
+    {
     }
 
     public class StaFinder
     {
+        public NetWorkGeoMap NetWorkGeoMap { get; set; }
+
+        public StaFinder(NetWorkGeoMap netWorkGeoMap)
+        {
+            NetWorkGeoMap = netWorkGeoMap;
+        }
+
+
         public PlaceInfo Find(UnifiSta sta)
         {
             var placeInfo = new PlaceInfo();
