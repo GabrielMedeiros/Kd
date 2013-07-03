@@ -1,0 +1,50 @@
+﻿[
+    {
+        "name": "SobreLoja",
+        "coordinates": [
+            {
+                "ap_mac": "1:1:1",
+                "possiblePoints": [
+                    {
+                        "noise": -90,
+                        "signal": -50
+                 
+                        "noise": -90,
+                        "signal": -70
+                    },
+                    {
+                        "noise": -90,
+                        "signal": -65
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "SegundoAndar",
+        "coordinates": [
+            {
+                "ap_mac": "1:1:1",
+                "possiblePoints": [
+                    {
+                        "noise": -90,
+                        "signal": -85
+                    }
+                ]
+            },
+            {
+                "ap_mac": "2:2:2",
+                "possiblePoints": [
+                    {
+                        "noise": -90,
+                        "signal": -50
+                    },
+                    {
+                        "noise": -90,
+                        "signal": -40
+                    }
+                ]
+            }
+        ]
+    }
+]

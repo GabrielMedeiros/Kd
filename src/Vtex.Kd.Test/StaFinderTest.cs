@@ -73,10 +73,7 @@ namespace Vtex.Kd.Test
 
     }
 
-    public class NetWorkGeoMap
-    {
-    }
-
+  
     public class StaFinder
     {
         public NetWorkGeoMap NetWorkGeoMap { get; set; }
